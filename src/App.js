@@ -1,7 +1,8 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
-import Header from "./components/Header";
 import "./components/styles/App.css";
+import Header from "./components/Header";
+import PersonalInfo from "./components/PersonalInfo";
 
 class App extends Component {
     constructor(props) {
@@ -11,7 +12,10 @@ class App extends Component {
         return (
             <div id="main">
                 <Header id="header" />
-                {/* <PersonalInfo />
+                <div id="builder-container">
+                    <PersonalInfo id="personal-info" className="form-block" />
+                </div>
+                {/* 
                 <JobHistory />
                 <Education /> */}
             </div>
